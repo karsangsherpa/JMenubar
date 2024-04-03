@@ -16,12 +16,15 @@ public class MyFrame extends JFrame implements ActionListener{
     JMenuItem loadItem;
     JMenuItem saveItem;
     JMenuItem exitItem;
+    ImageIcon loadIcon;
 
 MyFrame() {
 frame = new JFrame();
 this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 this.setSize(500,500);
 this.setLayout(new FlowLayout());
+
+loadIcon = new ImageIcon();
 
 menuBar = new JMenuBar();
 JMenu fileMenu = new JMenu("file");
